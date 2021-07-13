@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+}
+.navbar {
+	background-color: rgba(0, 0, 0, 0.6);
+	min-height: 10vh;
+}
+.navbar-collapse {
+	justify-content: flex-end;
+}
+a {
+	color: antiquewhite !important;
+}
+.navbar-toggler {
+	background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.header {
+background-image: url("../images/barber-2165745_1280.jpg"); 
+background-attachment: fixed; 
+background-size: cover;
+background-position: center;
+min-height: 100vh;
+}
+
+.overlay {
+ position: absolute;
+ min-height: 100%;
+ min-width: 100%;
+ left: 0;
+ top: 0;
+ background: rgba(244, 244, 244, 0.5);
+}
+
+.description {
+	position: absolute;
+	top:  30%;
+	padding: 2rem;
+	margin: auto;
+}
+ h1 {
+	font-family: 'Alegreya', serif !important;
+}
+.description p{
+ font-size: 20px;
+ line-height: 1.5;
+ text-align: left;
+}
+.description button{
+ color: antiquewhite;
+}
+
+/*******images*******/
+img{
+border-radius: 1%;
+filter: saturate(60%);
+}
+
+/*******About********/
+.about, .contact{
+ padding: 1em;
+ position: relative;
+ min-height: 100vh;
+ padding-top:  10%;
+ background-color: rgba(254,252,249, 1);
+}
+.about h2, .contact h2 {
+	font-family: 'Alegreya', serif;
+	color: rosybrown;
+}
+.about span{
+ display: block;
+/* position: absolute;
+*/ margin-left: 20%;
+}
+.about .desc{
+ padding-left: 2em;
+ border-left: 2px solid #10828C;
+}
+
+.about .desc p{
+ line-height:2;
+ color:#888;
+}
+
+/*******Contact-form********/
+.contact-form .container {
+	position: relative;
+	top:  20%;
+	padding: 2em;
+	background-color: rgba(244, 244, 244, 0.8);
+	max-width: 60%;
+}
+.contact-form .container .row{
+	margin:  10px ;
+}
+.contact-form h1 {
+	text-align: center;
+}
+
+/*******Gallery********/
+.gallery {
+	min-height: 100vh;
+	padding-top: 10vh;
+}
+.gallery .row div {
+	height: 45vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
+.gallery img {
+	width: 100%;
+	filter: brightness(120%) saturate(50%);
+}
+
+/*****Contact*****/
+
+/*background settings in "about" section */
+
+.contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height:2;
+	color:#888;
+}
+
+.contact .card {
+	max-width: 80%;
+}
+.card-body {
+padding-top: 5rem !important;
+}
