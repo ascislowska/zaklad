@@ -8,89 +8,68 @@
 	<!-- fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 <!-- scripts -->
 </head>
 <body>
 <!-- navbar -->
  <nav>
- <a data-value="header" href="#">Home</a>
-  <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
- <div id="navbarSupportedContent">
+ <a href="#">Home</a>
   <ul>
 	<li>
-	     <a data-value="header" aria-current="page" href="#">Start</a>
+	     <a  href="#">Start</a>
 	</li>
 	<li >
-	     <a  data-value="about" href="#">O nas</a>
+	     <a  href="#about">O nas</a>
 	</li>
 	<li >
-	    <a  data-value="contact-form" href="#">Zapisy</a>
+	    <a  href="#contact-form">Zapisy</a>
 	</li>
 	<li >
-	    <a  data-value="gallery" href="#">Galeria</a>
+	    <a href="#gallery">Galeria</a>
 	</li>
 	<li >
-		<a  data-value="contact" href="#">Kontakt</a>
+		<a  href="#visit">Odwiedź nas</a>
 	</li>
   </ul>
-</div></nav>
+</nav>
 <!-- Header -->
-<header class="header" id="header">
-	<div class="overlay">
+<header class="header photo-background" id="header">
 	<div class="container">
 		<div>
 		 <h1>ZAKŁAD FRYZJERSKI</h1>
 		 <p>Działamy od 1970 roku.</p>
-		 <button data-value="contact-form">Umów wizytę</button>
+		 <a href="#contact-form"><button>Umów wizytę</button></a>
 		</div>
-	</div>
 	</div>
 </header>
 <!-- About -->
-<div class="about" id="about">
-	<div class="container">
-		<div >
-			<div >
+<div class="about light-background" id="about">
+			<div>
 				<img src="images/barber-shop-5212059_1280.jpg" >
-				<span >Antoni w swoim zakładzie</span>
+				<span>Antoni w swoim zakładzie</span>
 			</div>
 			<div>
 				<h2>Antoni Cierplikowski</h2>
 				<p>W 1912 roku w Paryżu założył własny zakład fryzjerski w centrum Paryża przy rue Cambon 5[2]. Wylansował modę na krótkie włosy, zapisując się w historii jako autor fryzury „na chłopczycę” - à la garçonne (fr. garçon – chłopiec), którą wymyślił dla aktorki Ève Lavallière w roku 1909 roku. Od tej fryzury i sukienek Coco Chanel zaczęła się nowa moda lat międzywojennych. Czesał najbardziej znane artystki swoich czasów: Matę Hari Sarę Bernhardt, Isadorę Duncan, Josephine Baker, Édith Piaf, Brigitte Bardot. Przyjaźnił się z Pablem Picasso, Amedeo Modiglianim, Salvadorem Dalím, Xawerym Dunikowskim i Jeanem Cocteau. </p>
 			</div>
-		</div>
-	</div>
 </div>
 
 <!-- Contact form -->
-<div>
-	<div class="contact-form header" id="contact-form">
+<div class="contact-form photo-background" id="contact-form">
 		<div class="container">
 			<form>
-				<h1>ZAPISY</h1>
-				<div >
-					<div >
+				<h1>Zapisy</h1>
+					<div>
 						<label for="date" class="form-label">Data</label>
+						<input type="date" name="date">
 					</div>
-					<div >
-						<input type="date" name="date" >
-					</div>
-				</div>
-				<div >
-					<div >
-						<label for="name" >Imię i nazwisko</label>
-					</div>
-					<div >
+					<div>
+						<label for="name">Imię i nazwisko</label>
 						<input type="text" name="name">
 					</div>
-				</div>
-				<div >
-					<div >
+					<div>
 						<label for="service" >Usługa</label>
-					</div>
-					<div >
 						<select type="select" name="service" >
 							<option value="cut">Strzyżenie</option>
 							<option value="barber">Barber</option>
@@ -98,68 +77,112 @@
 							<option value="graying">Odsiwianie</option>
 						</select>
 					</div>
+					<div>
+						<input type="submit" name="submit" value="Wyślij">
+					</div>
+			</form>
+		</div>
+</div>
+
+<!-- Gallery -->
+<div>
+	<div class="gallery light-background" id="gallery">
+		<div><h1>Galeria</h1></div>
+		<div class="container">
+				<div>
+					<img src="images\fashion-6209084_1280.jpg" >
+				</div>
+				<div>
+					<img src="images\stylish-boy-2269508_1280.jpg" >
 				</div>
 				<div >
-					<input type="submit" name="submit" value="Wyślij">
+					<img src="images\fashion-6209084_1280.jpg" >
 				</div>
+				<div >
+					<img src="images\modeling-2775567_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\fashion-6209084_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\man-model-6163547_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\man-model-6163547_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\stylish-boy-2269508_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\man-model-6163547_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\modeling-2775567_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\man-model-6163547_1280.jpg" >
+				</div>
+				<div>
+					<img src="images\fashion-6209084_1280.jpg" >
+				</div>
+				<div>
+					<img src="images\stylish-boy-2269508_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\fashion-6209084_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\modeling-2775567_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\fashion-6209084_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\man-model-6163547_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\man-model-6163547_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\stylish-boy-2269508_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\man-model-6163547_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\modeling-2775567_1280.jpg" >
+				</div>
+				<div >
+					<img src="images\man-model-6163547_1280.jpg" >
+				</div>
+		</div>
+	</div>
+<!-- Open -->
+<div class="open" id="visit">
+	<div class="container">
+		<video
+        src="images/Barber - 101959.mp4"
+        class="backgroundVideo"
+        autoplay
+        muted
+        loop
+      	></video>
+	</div>
 
-				</div>
-			</form>
+	<div class="location">
+		<div>
+		       <h2>Już otwarte!</h2>
+		        <p>al. Lotników 5<br>
+		        05-600 Warka</p>
+		        <p>tel: 603-333-333</p>
 		</div>
 	</div>
 </div>
-<!-- Gallery -->
-<div>
-	<div class="gallery" id="gallery">
-		<div class="container">
-			<div >
-				<div >
-					<img src="images\fashion-6209084_1280.jpg" >
-				</div>
-				<div >
-					<img src="images\man-model-6163547_1280.jpg" >
-				</div>
-				<div >
-					<img src="images\fashion-6209084_1280.jpg" >
-				</div>
-			</div>
-			<div >
-				<div >
-					<img src="images\stylish-5017919_1280.jpg" >
-				</div>
-				<div >
-					<img src="images\fashion-6209084_1280.jpg" >
-				</div>
-				<div >
-					<img src="images\man-model-6163547_1280.jpg" >
-				</div>
-			</div>
-
-		</div>
-	</div>
-<!-- Contact -->
-<div class="contact" id="contact">
-
-		<div>
-  			<div >
-    		<div >
-      			<img src="images\barbershop-4762345_1280.jpg">
-    		</div>
-		    <div >
-		      <div >
-		        <h5 >Już otwarte!</h5>
-		        <p >al. Lotników 5<br>
-		        05-600 Warka</p>
-		        <p >tel: 603-333-333</p>
-		      </div>
-    		</div>
- 		 </div>
-		</div>
 
 
 </div>
 </div>
 <script type="text/javascript" src="main.js"></script>
-	
+
 </body>
 </html>

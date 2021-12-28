@@ -1,135 +1,226 @@
 * {
 	box-sizing: border-box;
 }
-.navbar {
+
+html {
+	font-size: 16px;
+	color: rgba(35,32,30);
+	font-family: 'Lato', sans-serif;
+	scroll-behavior: smooth;
+}
+h1, h2, a, label {
+	font-weight: bold;
+	font-family: 'Alegreya', sans-serif;
+}
+h1 {
+	text-transform: uppercase;
+}
+h2 {
+	color: rosybrown;
+}
+body {
+	margin: 0;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+nav {
 	background-color: rgba(0, 0, 0, 0.6);
 	min-height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	min-width: 100%;
+	z-index: 9999;
 }
-.navbar-collapse {
-	justify-content: flex-end;
-}
-a {
-	color: antiquewhite !important;
-}
-.navbar-toggler {
-	background-color: rgba(0, 0, 0, 0.4) !important;
-}
-
-.header {
-background-image: url("../images/barber-2165745_1280.jpg"); 
-background-attachment: fixed; 
-background-size: cover;
-background-position: center;
-min-height: 100vh;
+nav ul {
+	display: flex;
+	min-width: 30%;
+	justify-content: space-between;
+	padding-right: 0.5rem;
+	list-style: none;
 }
 
-.overlay {
- position: absolute;
- min-height: 100%;
- min-width: 100%;
- left: 0;
- top: 0;
- background: rgba(244, 244, 244, 0.5);
+nav a {
+	color: antiquewhite;
+	margin: 1rem;
+	text-decoration: none;
 }
 
-.description {
-	position: absolute;
-	top:  30%;
-	padding: 2rem;
-	margin: auto;
+/* buttons and forms */
+button, input, select {
+ border-radius: 0.2rem;
+ color: rgba(35,32,30);
+ padding: 0.5rem 1rem;
+ margin: 0.1rem 0rem;
+ font-weight:500;
+ transition: all 0.2s;
+ text-decoration: none;
+ box-shadow: none;
 }
- h1 {
-	font-family: 'Alegreya', serif !important;
+
+input, select, option {
+	border: none;
+	background-color: rgba(256, 256, 256, .8);
 }
-.description p{
- font-size: 20px;
- line-height: 1.5;
- text-align: left;
+button, input[type="submit"] {
+	background-color: rgba(250,235,215, .4);
+	border: solid 2px rgba(35,32,30);
 }
-.description button{
- color: antiquewhite;
+button a {
+	color: rgba(35,32,30);
+	text-decoration: none;
+}
+button:hover {
+	background-color: rgba(175,164,150, .4);
 }
 
 /*******images*******/
 img{
 border-radius: 1%;
-filter: saturate(60%);
+filter: saturate(0.3);
+max-width: 100%;
 }
 
-/*******About********/
-.about, .contact{
- padding: 1em;
- position: relative;
+/*******Sections backgrounds********/
+.light-background{
+ padding: 5%;
+ padding-top: 10vh;
  min-height: 100vh;
- padding-top:  10%;
- background-color: rgba(254,252,249, 1);
+ background-color: rgba(254,252,249);
+ display: flex;
 }
-.about h2, .contact h2 {
-	font-family: 'Alegreya', serif;
-	color: rosybrown;
-}
-.about span{
- display: block;
-/* position: absolute;
-*/ margin-left: 20%;
-}
-.about .desc{
- padding-left: 2em;
- border-left: 2px solid #10828C;
-}
-
-.about .desc p{
- line-height:2;
- color:#888;
+.photo-background {
+	padding: 5%;
+	padding-top: 10vh;
+	background-image:
+	linear-gradient(gray, gray),
+	url("../images/barber-2165745_1280.jpg");
+	background-blend-mode: screen;
+	min-height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
 }
 
+/*****Header *******/
+.header {
+justify-content: center;
+align-items: center;
+}
+/*****Abut *******/
+.about {
+	display: grid;
+	justify-content: space-around;
+	align-items: flex-start;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 2rem;
+}
+
+.about h2 {
+	margin-top: 0;
+}
 /*******Contact-form********/
-.contact-form .container {
-	position: relative;
-	top:  20%;
-	padding: 2em;
-	background-color: rgba(244, 244, 244, 0.8);
-	max-width: 60%;
+.contact-form {
+	align-items: center;
+	justify-content: center;
 }
-.contact-form .container .row{
-	margin:  10px ;
+.contact-form .container form div{
+	display: flex;
+	justify-content: space-between;
 }
-.contact-form h1 {
-	text-align: center;
+.contact-form .container form div *{
+	width: 100%;
 }
 
 /*******Gallery********/
 .gallery {
-	min-height: 100vh;
-	padding-top: 10vh;
+	flex-direction: column;
+	align-items: center;
 }
-.gallery .row div {
-	height: 45vh;
-	overflow: hidden;
+.gallery .container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0;
+	margin:0;
+}
+
+.gallery .container div {
+		padding: 0.5rem;
+		transition: 1s;
+		height: 40vh;
+		flex-grow: 1;
+}
+.gallery .container div img {
+	max-height: 100%;
+min-width: 100%;
+object-fit: cover;
+object-position: 50% 0%;
+}
+
+
+/* animation when gallery slides in */
+.img-animated {
+	  animation: filter-animation 2s;
+}
+@keyframes filter-animation {
+  0% {
+    filter: saturate(0.3);
+  }
+
+  50% {
+    filter: saturate(1);
+  }
+
+  100% {
+    filter: saturate(0.3);
+  }
+}
+
+/*****Visit us*****/
+
+.open .container {
+	width: 100%;
+	height: 100vh;
 	display: flex;
 	align-items: center;
-	justify-items: center;
+	overflow: hidden;
 }
-.gallery img {
+.open .container .video {
+	object-fit: cover;
+	object-position: center;
+}
+.open .location {
 	width: 100%;
-	filter: brightness(120%) saturate(50%);
-}
-
-/*****Contact*****/
-
-/*background settings in "about" section */
-
-.contact {
+	height: 90vh;
+	border-radius: 2px;
+	position: relative;
+	top: 200px;
+	z-index: 10;
+	top: -100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	line-height:2;
-	color:#888;
+}
+.open .location div {
+	background:rgba(256, 256, 256, .8);
+	width: 50%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.contact .card {
-	max-width: 80%;
-}
-.card-body {
-padding-top: 5rem !important;
-}
