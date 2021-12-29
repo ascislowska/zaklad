@@ -113,7 +113,7 @@ visibility: hidden;
   background-color: rgba(254, 252, 249);
 }
 
-@media (max-width: 600px) {
+@media all and (max-width: 480px) {
 	nav {
 		transform: translateY(-100%);
 		transition: all ease-out 0.5s;
