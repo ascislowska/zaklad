@@ -1,4 +1,23 @@
- let galleryImg = document.querySelectorAll('.gallery img');
+ const galleryImg = document.querySelectorAll('.gallery img');
+const menuBtnBurger = document.querySelector('.menu-btn_burger');
+const menuBtn = document.querySelector('.menu-btn');
+const nav = document.querySelector('nav');
+const navLi = document.querySelectorAll('nav ul li');
+let menuOpen;
+
+console.log(navLi);
+
+//toggle  menu //
+function toggleNav() {
+  if (!menuOpen) {
+    menuBtnBurger.classList.add('open');
+    nav.classList.add('open');
+  } else if (menuOpen) {
+    menuBtnBurger.classList.remove('open');
+    nav.classList.remove('open');
+  }
+  return menuOpen = !menuOpen;
+}
 
 
 // gallery animation while scrolled in //
@@ -31,4 +50,6 @@
    });
  }
 
+ menuBtn.addEventListener('click', toggleNav);
+navLi.forEach(li => li.addEventListener("click", toggleNav));
  window.addEventListener('scroll', debounce(checkSlide));
