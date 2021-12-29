@@ -244,6 +244,7 @@ img {
   padding: 0.5rem;
   transition: 0.5s;
   flex-grow: 1;
+  height: 50vh;
 }
 .gallery .container div img {
   max-height: 100%;
@@ -281,7 +282,7 @@ img {
 }
 .open .container .video {
   object-fit: cover;
-  object-position: 0 50%;
+  object-position: right 50%;
 }
 .open .location {
   width: 100%;
