@@ -200,7 +200,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-/*****Abut *******/
+/*****About *******/
 .about {
   display: grid;
   justify-content: space-around;
@@ -242,8 +242,8 @@ img {
 
 .gallery .container div {
   padding: 0.5rem;
-  transition: 1s;
-  height: 40vh;
+  transition: 0.5s;
+  min-width
   flex-grow: 1;
 }
 .gallery .container div img {
@@ -282,7 +282,7 @@ img {
 }
 .open .container .video {
   object-fit: cover;
-  object-position: center;
+  object-position: 0 50%;
 }
 .open .location {
   width: 100%;
@@ -304,4 +304,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.open .location div * {
+margin: 0.2rem;
 }
