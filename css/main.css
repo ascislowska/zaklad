@@ -243,7 +243,6 @@ img {
 .gallery .container div {
   padding: 0.5rem;
   transition: 0.5s;
-  min-width
   flex-grow: 1;
 }
 .gallery .container div img {
