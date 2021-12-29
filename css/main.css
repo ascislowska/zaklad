@@ -40,7 +40,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.6);
   min-height: 10vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   position: fixed;
   top: 0;
