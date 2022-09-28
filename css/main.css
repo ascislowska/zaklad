@@ -113,7 +113,7 @@ visibility: hidden;
   background-color: rgba(254, 252, 249);
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	nav {
 		transform: translateY(-100%);
 		transition: all ease-out 0.5s;
@@ -272,21 +272,21 @@ img {
 }
 
 /*****Visit us*****/
-.open {
+.visit {
   position:  relative;
 }
-.open .container {
+.visit .container {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
-.open .container .video {
+.visit .container .video {
   object-fit: cover;
   object-position: right 50%;
 }
-.open .location {
+.visit .location {
   width: 100%;
   height: 90vh;
   border-radius: 2px;
@@ -297,7 +297,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-.open .location div {
+.visit .location div {
   background: rgba(256, 256, 256, 0.8);
   width: 50%;
   height: 40%;
@@ -306,6 +306,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-.open .location div * {
+.visit .location div * {
 margin: 0.2rem;
 }
