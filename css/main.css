@@ -200,6 +200,12 @@ img {
   justify-content: center;
   align-items: center;
 }
+ .header p {
+  color: rgba(0, 0, 0, 0.6) ;
+  font-size: 1.5em;
+
+  font-weight: 200;}
+
 /*****About *******/
 .about {
   display: grid;
@@ -245,6 +251,11 @@ img {
   transition: 0.5s;
   flex-grow: 1;
   height: 50vh;
+}
+@media (max-width:  800px) {
+  .gallery .container div {
+height:  auto;
+}
 }
 .gallery .container div img {
   max-height: 100%;
@@ -298,8 +309,8 @@ img {
   justify-content: center;
 }
 .visit .location div {
-  background: rgba(256, 256, 256, 0.8);
-  width: 50%;
+  background: rgba(256, 256, 256, 0.9);
+  width: 70%;
   height: 40%;
   display: flex;
   flex-direction: column;
